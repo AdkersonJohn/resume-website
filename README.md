@@ -65,6 +65,40 @@ npm run build
 
 This creates an optimized production build in the `build` folder.
 
+## 🚀 Deploy to GitHub Pages
+
+### Automatic Deployment (Recommended)
+
+This project is configured with GitHub Actions for automatic deployment. Simply push to the `main` branch and your site will be automatically deployed to GitHub Pages.
+
+### Manual Deployment
+
+If you prefer manual deployment:
+
+1. Build the project:
+
+```bash
+npm run build
+```
+
+2. Deploy to GitHub Pages:
+
+```bash
+npm run deploy
+```
+
+### GitHub Pages Configuration
+
+Make sure your repository settings are configured correctly:
+
+1. Go to your repository Settings → Pages
+2. Set Source to "Deploy from a branch"
+3. Select the `gh-pages` branch
+4. Set folder to `/ (root)`
+5. Click Save
+
+Your site will be available at: https://adkersonjohn.github.io/resume-website
+
 ## 🎨 Customization
 
 ### Personal Information
