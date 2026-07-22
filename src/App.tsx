@@ -12,8 +12,7 @@ import GlobalStyles from "./styles/GlobalStyles";
 
 const AppContainer = styled.div`
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  font-family: "Inter", sans-serif;
+  background: var(--bg);
 `;
 
 const MainContent = styled(motion.main)`

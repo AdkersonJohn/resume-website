@@ -9,9 +9,9 @@ const HeaderContainer = styled(motion.header)`
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--nav-bg);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid var(--hairline);
   transition: all 0.3s ease;
 `;
 
@@ -28,7 +28,7 @@ const Nav = styled.nav`
 const Logo = styled.div`
   font-size: 1.5rem;
   font-weight: 700;
-  color: #1a202c;
+  color: var(--text);
 `;
 
 const NavLinks = styled.div<{ isOpen: boolean }>`
@@ -41,8 +41,8 @@ const NavLinks = styled.div<{ isOpen: boolean }>`
     top: 70px;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: rgba(22, 22, 23, 0.98);
+    backdrop-filter: blur(20px);
     flex-direction: column;
     padding: 2rem;
     transform: ${({ isOpen }) =>
@@ -53,20 +53,20 @@ const NavLinks = styled.div<{ isOpen: boolean }>`
 `;
 
 const NavLink = styled.a`
-  color: #4a5568;
+  color: var(--text-secondary);
   font-weight: 500;
   transition: color 0.3s ease;
   cursor: pointer;
 
   &:hover {
-    color: #667eea;
+    color: var(--text);
   }
 `;
 
 const MobileMenuButton = styled.button`
   display: none;
   font-size: 1.5rem;
-  color: #4a5568;
+  color: var(--text);
 
   @media (max-width: 768px) {
     display: block;
@@ -101,9 +101,8 @@ const Header: React.FC = () => {
       transition={{ duration: 0.5 }}
       style={{
         background: isScrolled
-          ? "rgba(255, 255, 255, 0.98)"
-          : "rgba(255, 255, 255, 0.95)",
-        boxShadow: isScrolled ? "0 2px 20px rgba(0, 0, 0, 0.1)" : "none",
+          ? "rgba(22, 22, 23, 0.94)"
+          : "rgba(22, 22, 23, 0.8)",
       }}
     >
       <Nav>
