@@ -1,7 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { FiCode, FiTerminal, FiSettings } from "react-icons/fi";
+import {
+  FiMapPin,
+  FiShare2,
+  FiActivity,
+  FiTarget,
+  FiShoppingBag,
+  FiCamera,
+  FiWatch,
+  FiExternalLink,
+} from "react-icons/fi";
 
 const ProjectsSection = styled.section`
   padding: 100px 0;
@@ -92,36 +101,121 @@ const TechTag = styled.span`
   font-weight: 500;
 `;
 
+const LiveLink = styled.a`
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1.25rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #667eea;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #764ba2;
+  }
+`;
+
+interface Project {
+  title: string;
+  technology: string;
+  icon: React.ReactElement;
+  description: string;
+  techStack: string[];
+  liveUrl?: string;
+}
+
 const Projects: React.FC = () => {
-  const projects = [
+  const projects: Project[] = [
     {
-      title: "Classroom Monitoring Interface",
-      technology: "JavaScript",
-      icon: <FiCode />,
+      title: "Camp Scout",
+      technology: "Full-Stack SaaS",
+      icon: <FiMapPin />,
       description:
-        "Created a web-based display for the IT department to monitor classroom camera streams, showcasing frontend development and user interface design skills.",
-      techStack: ["JavaScript", "HTML/CSS", "Web Development", "UI/UX"],
+        "Full-stack campsite monitoring and auto-booking platform for Recreation.gov. Watches for availability, alerts users via email/SMS/push, and completes bookings automatically with browser automation. Includes Stripe subscription billing and iOS/Android apps via Capacitor.",
+      techStack: [
+        "React",
+        "Node.js",
+        "Firebase",
+        "Playwright",
+        "Stripe",
+        "AWS",
+        "Twilio",
+      ],
+      liveUrl: "https://campscout.tech",
     },
     {
-      title: "Proctor Camera Centering System",
-      technology: "Bash",
-      icon: <FiTerminal />,
+      title: "AutoSocials",
+      technology: "Full-Stack SaaS",
+      icon: <FiShare2 />,
       description:
-        "Implemented a classroom proctor camera centering system scheduled nightly via Task Scheduler, highlighting scripting and automation capabilities.",
+        "Social media automation SaaS that publishes video and photo content to Instagram, X, Facebook, Threads, and YouTube from a single submission — with scheduling, a unified comments/DM inbox, analytics, and zero-downtime Docker CI/CD with automatic rollback.",
       techStack: [
-        "Bash Scripting",
-        "Task Scheduler",
-        "Automation",
-        "System Administration",
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Firestore",
+        "Redis",
+        "FFmpeg",
+        "Docker",
+      ],
+      liveUrl: "https://autosocials.work",
+    },
+    {
+      title: "GainsIQ",
+      technology: "iOS App",
+      icon: <FiActivity />,
+      description:
+        "Offline-first iOS workout tracker with a research-backed progression coaching engine — estimated-1RM tracking, plateau detection, deload timing, and in-workout weight/rep suggestions. Local SQLite database, no accounts required.",
+      techStack: ["React Native", "Expo", "TypeScript", "SQLite", "Drizzle ORM"],
+    },
+    {
+      title: "Castle Killer",
+      technology: "3D Game",
+      icon: <FiTarget />,
+      description:
+        "3D castle-destruction artillery game with a custom multi-core Rust physics engine (Rapier3D) — support-graph collapse cascades, ragdoll soldiers, and destructible brick-by-brick castles. Ships as a native desktop/iOS app via Tauri with a hand-built AdMob plugin.",
+      techStack: [
+        "Rust",
+        "Three.js",
+        "Rapier3D",
+        "Tauri",
+        "WebAssembly",
+        "Swift",
       ],
     },
     {
-      title: "Jira Issue Tagging System",
-      technology: "DevOps",
-      icon: <FiSettings />,
+      title: "GRA Website",
+      technology: "E-Commerce",
+      icon: <FiShoppingBag />,
       description:
-        "Designed a Jira issue tagging system to streamline customer production upgrades, demonstrating skills in DevOps and process improvement.",
-      techStack: ["Jira", "DevOps", "Process Improvement", "Automation"],
+        "E-commerce and brand platform for the GRA apparel line: Shopify Storefront checkout, a real-time GraphQL admin CMS with role-based access and live updates over WebSockets, and custom WebGL shader visuals. Deployed to AWS with Terraform and GitHub Actions.",
+      techStack: [
+        "React",
+        "TypeScript",
+        "GraphQL",
+        "Shopify",
+        "Firebase",
+        "AWS",
+        "Terraform",
+      ],
+    },
+    {
+      title: "Asset Tag Scanner",
+      technology: "Enterprise IT",
+      icon: <FiCamera />,
+      description:
+        "Power Apps barcode-scanning app used during hardware refresh cycles — scans device asset tags and cross-references SharePoint to instantly flag which machines need cut sheets, including nonstandard-device and missing-inventory detection.",
+      techStack: ["Power Apps", "SharePoint", "Power Fx", "Microsoft 365"],
+    },
+    {
+      title: "Pong With Friends",
+      technology: "watchOS Game",
+      icon: <FiWatch />,
+      description:
+        "Native Apple Watch Pong with Digital Crown paddle control and real-time watch-to-watch multiplayer — host-authoritative netcode over Apple's Network framework, 60fps SwiftUI Canvas rendering, and haptic feedback.",
+      techStack: ["Swift", "SwiftUI", "watchOS", "Network framework"],
     },
   ];
 
@@ -161,6 +255,16 @@ const Projects: React.FC = () => {
                   <TechTag key={idx}>{tech}</TechTag>
                 ))}
               </ProjectTech>
+
+              {project.liveUrl && (
+                <LiveLink
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Live <FiExternalLink />
+                </LiveLink>
+              )}
             </ProjectCard>
           ))}
         </ProjectsGrid>
