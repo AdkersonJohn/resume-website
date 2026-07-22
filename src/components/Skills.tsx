@@ -5,8 +5,8 @@ import { FiCode, FiTool, FiUsers, FiDatabase } from "react-icons/fi";
 
 const SkillsSection = styled.section`
   padding: 100px 0;
-  background: #f8fafc;
-  color: #1a202c;
+  background: var(--surface-alt);
+  color: var(--text);
 `;
 
 const Container = styled.div`
@@ -20,7 +20,7 @@ const SectionTitle = styled(motion.h2)`
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 3rem;
-  color: #1a202c;
+  color: var(--text);
 `;
 
 const SkillsGrid = styled.div`
@@ -31,11 +31,10 @@ const SkillsGrid = styled.div`
 `;
 
 const SkillCategory = styled(motion.div)`
-  background: white;
-  border-radius: 16px;
+  background: var(--surface);
+  border-radius: 18px;
   padding: 2rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--hairline);
 `;
 
 const CategoryHeader = styled.div`
@@ -49,18 +48,19 @@ const CategoryIcon = styled.div`
   width: 50px;
   height: 50px;
   border-radius: 12px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--chip);
+  border: 1px solid var(--hairline);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--text);
   font-size: 1.5rem;
 `;
 
 const CategoryTitle = styled.h3`
   font-size: 1.3rem;
   font-weight: 600;
-  color: #1a202c;
+  color: var(--text);
 `;
 
 const SkillsList = styled.div`
@@ -78,7 +78,7 @@ const SkillItem = styled.div`
 
 const SkillName = styled.span`
   font-weight: 500;
-  color: #4a5568;
+  color: var(--text-secondary);
 `;
 
 const SkillLevel = styled.div`
@@ -90,15 +90,14 @@ const SkillDot = styled.div<{ filled: boolean }>`
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: ${({ filled }) => (filled ? "#667eea" : "#e2e8f0")};
+  background: ${({ filled }) => (filled ? "var(--text)" : "var(--chip)")};
 `;
 
 const AdditionalSkills = styled(motion.div)`
-  background: white;
-  border-radius: 16px;
+  background: var(--surface);
+  border-radius: 18px;
   padding: 2rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--hairline);
   max-width: 800px;
   margin: 0 auto;
 `;
@@ -108,7 +107,7 @@ const AdditionalSkillsTitle = styled.h3`
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
-  color: #1a202c;
+  color: var(--text);
 `;
 
 const SkillsTags = styled.div`
@@ -119,8 +118,8 @@ const SkillsTags = styled.div`
 `;
 
 const SkillTag = styled.span`
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: var(--chip);
+  color: var(--text);
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.9rem;

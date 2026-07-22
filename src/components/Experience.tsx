@@ -5,8 +5,8 @@ import { FiCalendar, FiMapPin, FiBriefcase } from "react-icons/fi";
 
 const ExperienceSection = styled.section`
   padding: 100px 0;
-  background: white;
-  color: #1a202c;
+  background: var(--bg);
+  color: var(--text);
 `;
 
 const Container = styled.div`
@@ -20,7 +20,7 @@ const SectionTitle = styled(motion.h2)`
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 3rem;
-  color: #1a202c;
+  color: var(--text);
 `;
 
 const ExperienceGrid = styled.div`
@@ -31,30 +31,28 @@ const ExperienceGrid = styled.div`
 `;
 
 const ExperienceCard = styled(motion.div)`
-  background: white;
-  border-radius: 16px;
+  background: var(--surface);
+  border-radius: 18px;
   padding: 2rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e2e8f0;
-  transition: all 0.3s ease;
+  border: 1px solid var(--hairline);
+  transition: background 0.3s ease;
 
   &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    background: #252527;
   }
 `;
 
 const JobTitle = styled.h3`
   font-size: 1.5rem;
   font-weight: 600;
-  color: #1a202c;
+  color: var(--text);
   margin-bottom: 0.5rem;
 `;
 
 const Company = styled.h4`
   font-size: 1.1rem;
   font-weight: 500;
-  color: #667eea;
+  color: var(--text-secondary);
   margin-bottom: 1rem;
 `;
 
@@ -70,11 +68,11 @@ const MetaItem = styled.div`
   align-items: center;
   gap: 0.5rem;
   font-size: 0.9rem;
-  color: #718096;
+  color: var(--text-secondary);
 `;
 
 const JobDescription = styled.p`
-  color: #4a5568;
+  color: var(--text-secondary);
   line-height: 1.7;
   margin-bottom: 1rem;
 `;
@@ -85,7 +83,7 @@ const Responsibilities = styled.ul`
 `;
 
 const Responsibility = styled.li`
-  color: #4a5568;
+  color: var(--text-secondary);
   line-height: 1.7;
   margin-bottom: 0.5rem;
   padding-left: 1.5rem;
@@ -93,7 +91,7 @@ const Responsibility = styled.li`
 
   &:before {
     content: "•";
-    color: #667eea;
+    color: var(--text-secondary);
     font-weight: bold;
     position: absolute;
     left: 0;
