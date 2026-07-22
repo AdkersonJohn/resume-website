@@ -11,8 +11,8 @@ import {
 
 const ContactSection = styled.section`
   padding: 100px 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: var(--bg);
+  color: var(--text);
 `;
 
 const Container = styled.div`
@@ -26,7 +26,7 @@ const SectionTitle = styled(motion.h2)`
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 3rem;
-  color: white;
+  color: var(--text);
 `;
 
 const ContactGrid = styled.div`
@@ -37,17 +37,15 @@ const ContactGrid = styled.div`
 `;
 
 const ContactCard = styled(motion.div)`
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 16px;
+  background: var(--surface);
+  border-radius: 18px;
   padding: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--hairline);
   text-align: center;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease;
 
   &:hover {
-    transform: translateY(-4px);
-    background: rgba(255, 255, 255, 0.15);
+    background: #252527;
   }
 `;
 
@@ -55,7 +53,8 @@ const ContactIcon = styled.div`
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--chip);
+  border: 1px solid var(--hairline);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,16 +70,16 @@ const ContactTitle = styled.h3`
 
 const ContactInfo = styled.div`
   font-size: 1rem;
-  opacity: 0.9;
+  color: var(--text-secondary);
 `;
 
 const ContactLink = styled.a`
-  color: white;
+  color: var(--text);
   text-decoration: none;
-  transition: opacity 0.3s ease;
+  transition: color 0.3s ease;
 
   &:hover {
-    opacity: 0.8;
+    color: var(--text-secondary);
   }
 `;
 
@@ -95,18 +94,17 @@ const SocialLink = styled(motion.a)`
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--chip);
+  border: 1px solid var(--hairline);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--text);
   font-size: 1.2rem;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
+  transition: background 0.3s ease;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.3);
-    transform: translateY(-2px);
+    background: #3d3d3f;
   }
 `;
 
