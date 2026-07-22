@@ -1,6 +1,17 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
+  :root {
+    --bg: #000000;
+    --surface: #1d1d1f;
+    --surface-alt: #161617;
+    --chip: #2d2d2f;
+    --text: #f5f5f7;
+    --text-secondary: #86868b;
+    --hairline: rgba(255, 255, 255, 0.12);
+    --nav-bg: rgba(22, 22, 23, 0.8);
+  }
+
   * {
     margin: 0;
     padding: 0;
@@ -12,16 +23,18 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f8fafc;
+    color: var(--text);
+    background-color: var(--bg);
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 1rem;
+    letter-spacing: -0.015em;
   }
 
   p {
