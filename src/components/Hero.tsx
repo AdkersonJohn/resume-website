@@ -9,7 +9,7 @@ const HeroSection = styled.section`
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
+  color: var(--text);
   padding: 100px 20px 50px;
 `;
 
@@ -21,17 +21,15 @@ const Greeting = styled(motion.div)`
   font-size: 1.2rem;
   font-weight: 400;
   margin-bottom: 1rem;
-  opacity: 0.9;
+  color: var(--text-secondary);
 `;
 
 const Name = styled(motion.h1)`
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #fff 0%, #e2e8f0 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text);
+  letter-spacing: -0.02em;
 
   @media (max-width: 768px) {
     font-size: 2.5rem;
@@ -42,14 +40,14 @@ const Title = styled(motion.h2)`
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 2rem;
-  opacity: 0.9;
+  color: var(--text-secondary);
 `;
 
 const Description = styled(motion.p)`
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 3rem;
-  opacity: 0.8;
+  color: var(--text-secondary);
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -65,36 +63,19 @@ const ButtonGroup = styled(motion.div)`
 
 const Button = styled(motion.button)`
   padding: 12px 24px;
-  border-radius: 8px;
+  border-radius: 980px;
   font-weight: 500;
   font-size: 1rem;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
+  background: #f5f5f7;
+  color: #000;
 
-  &.primary {
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
-
-    &:hover {
-      background: rgba(255, 255, 255, 0.3);
-      transform: translateY(-2px);
-    }
-  }
-
-  &.secondary {
-    background: transparent;
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-
-    &:hover {
-      background: rgba(255, 255, 255, 0.1);
-      transform: translateY(-2px);
-    }
+  &:hover {
+    background: #d5d5d9;
   }
 `;
 
@@ -108,18 +89,17 @@ const SocialLink = styled(motion.a)`
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--chip);
+  border: 1px solid var(--hairline);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--text);
   font-size: 1.2rem;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
+  transition: background 0.3s ease;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-2px);
+    background: #3d3d3f;
   }
 `;
 

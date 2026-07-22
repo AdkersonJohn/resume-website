@@ -14,8 +14,8 @@ import {
 
 const ProjectsSection = styled.section`
   padding: 100px 0;
-  background: #f8fafc;
-  color: #1a202c;
+  background: var(--bg);
+  color: var(--text);
 `;
 
 const Container = styled.div`
@@ -29,7 +29,7 @@ const SectionTitle = styled(motion.h2)`
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 3rem;
-  color: #1a202c;
+  color: var(--text);
 `;
 
 const ProjectsGrid = styled.div`
@@ -41,16 +41,14 @@ const ProjectsGrid = styled.div`
 `;
 
 const ProjectCard = styled(motion.div)`
-  background: white;
-  border-radius: 16px;
+  background: var(--surface);
+  border-radius: 18px;
   padding: 2rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e2e8f0;
-  transition: all 0.3s ease;
+  border: 1px solid var(--hairline);
+  transition: background 0.3s ease;
 
   &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    background: #252527;
   }
 `;
 
@@ -65,22 +63,23 @@ const ProjectIcon = styled.div`
   width: 50px;
   height: 50px;
   border-radius: 12px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--chip);
+  border: 1px solid var(--hairline);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--text);
   font-size: 1.5rem;
 `;
 
 const ProjectTitle = styled.h3`
   font-size: 1.3rem;
   font-weight: 600;
-  color: #1a202c;
+  color: var(--text);
 `;
 
 const ProjectDescription = styled.p`
-  color: #4a5568;
+  color: var(--text-secondary);
   line-height: 1.7;
   margin-bottom: 1rem;
 `;
@@ -93,8 +92,8 @@ const ProjectTech = styled.div`
 `;
 
 const TechTag = styled.span`
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: var(--chip);
+  color: var(--text);
   padding: 0.25rem 0.75rem;
   border-radius: 12px;
   font-size: 0.8rem;
@@ -108,12 +107,12 @@ const LiveLink = styled.a`
   margin-top: 1.25rem;
   font-weight: 600;
   font-size: 0.95rem;
-  color: #667eea;
+  color: var(--text-secondary);
   text-decoration: none;
   transition: color 0.2s ease;
 
   &:hover {
-    color: #764ba2;
+    color: var(--text);
   }
 `;
 

@@ -5,8 +5,8 @@ import { FiBookOpen, FiMapPin, FiAward } from "react-icons/fi";
 
 const EducationSection = styled.section`
   padding: 100px 0;
-  background: white;
-  color: #1a202c;
+  background: var(--surface-alt);
+  color: var(--text);
 `;
 
 const Container = styled.div`
@@ -20,15 +20,14 @@ const SectionTitle = styled(motion.h2)`
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 3rem;
-  color: #1a202c;
+  color: var(--text);
 `;
 
 const EducationCard = styled(motion.div)`
-  background: white;
-  border-radius: 16px;
+  background: var(--surface);
+  border-radius: 18px;
   padding: 2rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--hairline);
   max-width: 600px;
   margin: 0 auto;
 `;
@@ -36,14 +35,14 @@ const EducationCard = styled(motion.div)`
 const Degree = styled.h3`
   font-size: 1.5rem;
   font-weight: 600;
-  color: #1a202c;
+  color: var(--text);
   margin-bottom: 0.5rem;
 `;
 
 const University = styled.h4`
   font-size: 1.2rem;
   font-weight: 500;
-  color: #667eea;
+  color: var(--text-secondary);
   margin-bottom: 1rem;
 `;
 
@@ -59,14 +58,14 @@ const MetaItem = styled.div`
   align-items: center;
   gap: 0.5rem;
   font-size: 0.9rem;
-  color: #718096;
+  color: var(--text-secondary);
 `;
 
 const TrackInfo = styled.div`
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: var(--chip);
+  color: var(--text);
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 12px;
   margin-bottom: 1rem;
 `;
 
@@ -86,7 +85,7 @@ const GPA = styled.div`
   align-items: center;
   gap: 0.5rem;
   font-weight: 600;
-  color: #667eea;
+  color: var(--text);
   font-size: 1.1rem;
 `;
 
