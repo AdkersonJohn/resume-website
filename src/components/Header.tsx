@@ -123,7 +123,11 @@ const Header: React.FC = () => {
           <NavLink onClick={() => scrollToSection("contact")}>Contact</NavLink>
         </NavLinks>
 
-        <MobileMenuButton onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <MobileMenuButton
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isMenuOpen}
+        >
           {isMenuOpen ? <FiX /> : <FiMenu />}
         </MobileMenuButton>
       </Nav>

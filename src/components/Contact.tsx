@@ -45,7 +45,7 @@ const ContactCard = styled(motion.div)`
   transition: background 0.3s ease;
 
   &:hover {
-    background: #252527;
+    background: var(--surface-hover);
   }
 `;
 
@@ -104,7 +104,7 @@ const SocialLink = styled(motion.a)`
   transition: background 0.3s ease;
 
   &:hover {
-    background: #3d3d3f;
+    background: var(--chip-hover);
   }
 `;
 
@@ -182,6 +182,7 @@ const Contact: React.FC = () => {
             href="https://github.com/AdkersonJohn"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub"
           >
             <FiGithub />
           </SocialLink>
@@ -189,6 +190,7 @@ const Contact: React.FC = () => {
             href="https://www.linkedin.com/in/john-adkerson-63a0171b0/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn"
           >
             <FiLinkedin />
           </SocialLink>

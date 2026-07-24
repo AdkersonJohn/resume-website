@@ -49,7 +49,7 @@ const ProjectCard = styled(motion.div)`
   transition: background 0.3s ease;
 
   &:hover {
-    background: #252527;
+    background: var(--surface-hover);
   }
 `;
 
@@ -177,7 +177,8 @@ const Projects: React.FC = () => {
         "FFmpeg",
         "Docker",
       ],
-      hosting: "Docker Compose on VPS · GitHub Actions zero-downtime CI/CD · S3 media",
+      hosting:
+        "Docker Compose on VPS · GitHub Actions zero-downtime CI/CD · S3 media",
       liveUrl: "https://autosocials.work",
     },
     {
@@ -186,8 +187,15 @@ const Projects: React.FC = () => {
       icon: <FiActivity />,
       description:
         "Offline-first iOS workout tracker with a research-backed progression coaching engine — estimated-1RM tracking, plateau detection, deload timing, and in-workout weight/rep suggestions. Local SQLite database, no accounts required.",
-      techStack: ["React Native", "Expo", "TypeScript", "SQLite", "Drizzle ORM"],
-      hosting: "Offline-first, no backend · on-device SQLite · App Store via Expo EAS",
+      techStack: [
+        "React Native",
+        "Expo",
+        "TypeScript",
+        "SQLite",
+        "Drizzle ORM",
+      ],
+      hosting:
+        "Offline-first, no backend · on-device SQLite · App Store via Expo EAS",
     },
     {
       title: "Castle Killer",
@@ -220,7 +228,8 @@ const Projects: React.FC = () => {
         "AWS",
         "Terraform",
       ],
-      hosting: "AWS via Terraform · S3 + CloudFront · ECS Fargate + ALB · GitHub Actions",
+      hosting:
+        "AWS via Terraform · S3 + CloudFront · ECS Fargate + ALB · GitHub Actions",
     },
     {
       title: "Asset Tag Scanner",
@@ -238,7 +247,8 @@ const Projects: React.FC = () => {
       description:
         "Native Apple Watch Pong with Digital Crown paddle control and real-time watch-to-watch multiplayer — host-authoritative netcode over Apple's Network framework, 60fps SwiftUI Canvas rendering, and haptic feedback.",
       techStack: ["Swift", "SwiftUI", "watchOS", "Network framework"],
-      hosting: "Runs entirely on-watch · local-network multiplayer · TestFlight",
+      hosting:
+        "Runs entirely on-watch · local-network multiplayer · TestFlight",
     },
   ];
 
