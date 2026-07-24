@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "pre-push: running test suite..."
+CI=true npx react-scripts test --watchAll=false
