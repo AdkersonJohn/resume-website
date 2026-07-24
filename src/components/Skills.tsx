@@ -86,11 +86,11 @@ const SkillLevel = styled.div`
   gap: 0.25rem;
 `;
 
-const SkillDot = styled.div<{ filled: boolean }>`
+const SkillDot = styled.div<{ $filled: boolean }>`
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: ${({ filled }) => (filled ? "var(--text)" : "var(--chip)")};
+  background: ${({ $filled }) => ($filled ? "var(--text)" : "var(--chip)")};
 `;
 
 const AdditionalSkills = styled(motion.div)`
@@ -221,7 +221,7 @@ const Skills: React.FC = () => {
                       {[...Array(5)].map((_, i) => (
                         <SkillDot
                           key={i}
-                          filled={i < skill.level}
+                          $filled={i < skill.level}
                           data-filled={i < skill.level}
                         />
                       ))}

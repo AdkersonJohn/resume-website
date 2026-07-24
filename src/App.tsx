@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { IconContext } from "react-icons";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Experience from "./components/Experience";
@@ -23,7 +24,7 @@ const MainContent = styled(motion.main)`
 
 function App() {
   return (
-    <>
+    <IconContext.Provider value={{ attr: { "aria-hidden": true } }}>
       <GlobalStyles />
       <AppContainer>
         <Header />
@@ -40,7 +41,7 @@ function App() {
           <Contact />
         </MainContent>
       </AppContainer>
-    </>
+    </IconContext.Provider>
   );
 }
 
