@@ -10,6 +10,8 @@ const GlobalStyles = createGlobalStyle`
     --text-secondary: #86868b;
     --hairline: rgba(255, 255, 255, 0.12);
     --nav-bg: rgba(22, 22, 23, 0.8);
+    --surface-hover: #1f1f21;
+    --chip-hover: #3d3d3f;
   }
 
   * {

@@ -38,7 +38,7 @@ const ExperienceCard = styled(motion.div)`
   transition: background 0.3s ease;
 
   &:hover {
-    background: #252527;
+    background: var(--surface-hover);
   }
 `;
 
