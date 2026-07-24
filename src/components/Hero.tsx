@@ -99,7 +99,7 @@ const SocialLink = styled(motion.a)`
   transition: background 0.3s ease;
 
   &:hover {
-    background: #3d3d3f;
+    background: var(--chip-hover);
   }
 `;
 

@@ -45,7 +45,7 @@ const ContactCard = styled(motion.div)`
   transition: background 0.3s ease;
 
   &:hover {
-    background: #252527;
+    background: var(--surface-hover);
   }
 `;
 
@@ -104,7 +104,7 @@ const SocialLink = styled(motion.a)`
   transition: background 0.3s ease;
 
   &:hover {
-    background: #3d3d3f;
+    background: var(--chip-hover);
   }
 `;
 
