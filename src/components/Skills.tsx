@@ -132,9 +132,9 @@ const Skills: React.FC = () => {
       title: "Programming Languages",
       icon: <FiCode />,
       skills: [
-        { name: "Java (17+)", level: 5 },
+        { name: "Java (17+)", level: 4 },
         { name: "C#", level: 4 },
-        { name: "Python", level: 4 },
+        { name: "Python", level: 3 },
         { name: "JavaScript/TypeScript", level: 4 },
         { name: "C++", level: 3 },
       ],
@@ -143,20 +143,20 @@ const Skills: React.FC = () => {
       title: "Frameworks & Technologies",
       icon: <FiTool />,
       skills: [
-        { name: "Spring 6.x / Spring Boot 3.x", level: 5 },
-        { name: "ASP.NET", level: 4 },
+        { name: "Spring 6.x / Spring Boot 3.x", level: 4 },
+        { name: "ASP.NET", level: 3 },
         { name: "Angular/AngularJS", level: 4 },
-        { name: "React", level: 4 },
-        { name: "REST APIs", level: 5 },
+        { name: "React", level: 5 },
+        { name: "REST APIs", level: 4 },
       ],
     },
     {
       title: "Development Tools",
       icon: <FiDatabase />,
       skills: [
-        { name: "Git/GitHub/GitLab", level: 5 },
+        { name: "Git/GitHub/GitLab", level: 4 },
         { name: "Jenkins/JFrog", level: 4 },
-        { name: "VSCode/IntelliJ", level: 5 },
+        { name: "VSCode/IntelliJ", level: 4 },
         { name: "Visual Studio", level: 4 },
         { name: "Jira/Bitbucket", level: 4 },
       ],
@@ -166,8 +166,8 @@ const Skills: React.FC = () => {
       icon: <FiUsers />,
       skills: [
         { name: "T-SQL/RDBMS", level: 4 },
-        { name: "Azure", level: 4 },
-        { name: "Agile/Scrum", level: 5 },
+        { name: "Azure", level: 3 },
+        { name: "Agile/Scrum", level: 4 },
         { name: "Test-Driven Development", level: 4 },
         { name: "Object-Oriented Design", level: 4 },
       ],
@@ -219,7 +219,11 @@ const Skills: React.FC = () => {
                     <SkillName>{skill.name}</SkillName>
                     <SkillLevel>
                       {[...Array(5)].map((_, i) => (
-                        <SkillDot key={i} filled={i < skill.level} />
+                        <SkillDot
+                          key={i}
+                          filled={i < skill.level}
+                          data-filled={i < skill.level}
+                        />
                       ))}
                     </SkillLevel>
                   </SkillItem>
