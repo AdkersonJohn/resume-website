@@ -16,7 +16,7 @@ beforeAll(() => {
 test("renders all four verified roles in order", () => {
   render(<Experience />);
   const titles = [
-    "IT Analyst",
+    "Software Analyst",
     "Software Engineer 2",
     "Software Engineer 3",
     "IT Support Technician",
