@@ -132,7 +132,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          Software Developer & IT Support Specialist
+          Software Engineer — Warehouse Automation & AutoStore
         </Title>
 
         <Description
@@ -140,11 +140,12 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          Experienced software developer and IT support specialist with
-          expertise in Java, Spring Boot, and web development. Passionate about
-          creating efficient solutions and providing excellent technical
-          support. Strong background in full-stack development and system
-          administration.
+          Software engineer with 2.5 years building and deploying software for
+          AutoStore automated storage and retrieval systems at Kardex Remstar
+          and KPI Solutions — integrating with customer WMS platforms
+          including Manhattan WMi, and running on-site production installs and
+          go-lives. Full-stack across Java/Spring Boot, C#/.NET, React, and
+          Angular.
         </Description>
 
         <ButtonGroup
