@@ -20,7 +20,7 @@ test("exactly one skill is rated 5/5 and it is React", () => {
     const group = dot.parentElement!;
     filledCounts.set(group, (filledCounts.get(group) ?? 0) + 1);
   });
-  expect(filledCounts.size).toBe(20);
+  expect(filledCounts.size).toBe(24);
   const fiveStarNames: string[] = [];
   filledCounts.forEach((count, group) => {
     if (count === 5) {

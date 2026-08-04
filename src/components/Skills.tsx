@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { FiCode, FiTool, FiUsers, FiDatabase } from "react-icons/fi";
+import { FiCode, FiTool, FiUsers, FiDatabase, FiPackage } from "react-icons/fi";
 
 const SkillsSection = styled.section`
   padding: 100px 0;
@@ -128,6 +128,16 @@ const SkillTag = styled.span`
 
 const Skills: React.FC = () => {
   const skillCategories = [
+    {
+      title: "Warehouse Automation",
+      icon: <FiPackage />,
+      skills: [
+        { name: "AutoStore ASRS", level: 4 },
+        { name: "WMS/WMI Integration", level: 4 },
+        { name: "Production Installs & Go-Lives", level: 4 },
+        { name: "Hardware Simulation Testing", level: 4 },
+      ],
+    },
     {
       title: "Programming Languages",
       icon: <FiCode />,
