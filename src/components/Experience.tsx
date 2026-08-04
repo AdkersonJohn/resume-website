@@ -118,11 +118,12 @@ const Experience: React.FC = () => {
       location: "Cincinnati, OH",
       period: "Jul 2023 - Jul 2024",
       description:
-        "Developed and tested features for AutoStore automated storage and retrieval systems on an Agile team.",
+        "Developed, integrated, and deployed software for AutoStore automated storage and retrieval systems, from feature work through on-site customer installs.",
       responsibilities: [
+        "Integrated AutoStore software with customer WMS platforms, including Manhattan WMi, building and validating the interfaces that drive inventory and order flow",
         "Built features across a React frontend and C#/.NET backend with SQL Server persistence",
         "Validated changes daily against an in-house miniature AutoStore hardware simulation grid",
-        "Ran weekend production deployments at customer sites, monitoring logs to ensure smooth rollouts",
+        "Ran weekend production deployments and go-lives at customer sites during AutoStore installations, monitoring live logs to ensure smooth rollouts",
       ],
     },
     {
@@ -131,11 +132,12 @@ const Experience: React.FC = () => {
       location: "Cincinnati, OH",
       period: "Jan 2022 - Jun 2023",
       description:
-        "Built features for AutoStore warehouse automation systems on an Agile team.",
+        "Built and integrated software for AutoStore warehouse automation systems, supporting customer installs and go-lives on an Agile team.",
       responsibilities: [
+        "Integrated AutoStore software with customer WMS/WMI systems, developing and testing the interfaces handling inventory and order flow",
         "Developed features across an Angular frontend and Java Spring Boot backend with SQL Server persistence",
         "Tested throughout the day against an in-house AutoStore hardware simulation grid",
-        "Handled weekend on-site production deployments with live log monitoring at customer facilities",
+        "Handled weekend on-site production deployments and go-lives during AutoStore installations, with live log monitoring at customer facilities",
       ],
     },
     {
