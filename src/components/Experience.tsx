@@ -101,7 +101,7 @@ const Responsibility = styled.li`
 const Experience: React.FC = () => {
   const experiences = [
     {
-      title: "Software Analyst",
+      title: "IT Engineer",
       company: "Encore Technologies",
       location: "Cincinnati, OH",
       period: "Sep 2025 - Present",
