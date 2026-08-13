@@ -108,7 +108,7 @@ const Education: React.FC = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <Degree>Bachelor of Science in Information Technology</Degree>
+          <Degree>Bachelor's Degree in Computer Software Engineering</Degree>
           <University>University of Cincinnati</University>
 
           <EducationMeta>
@@ -118,7 +118,7 @@ const Education: React.FC = () => {
             </MetaItem>
             <MetaItem>
               <FiBookOpen />
-              2019 - 2023
+              Aug 2019 - May 2021
             </MetaItem>
           </EducationMeta>
 
