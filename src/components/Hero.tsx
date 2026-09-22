@@ -132,7 +132,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          Software Engineer — Warehouse Automation & AutoStore
+          Software Developer & IT Support Specialist
         </Title>
 
         <Description
@@ -140,12 +140,18 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          Software engineer with 2.5 years building and deploying software for
-          AutoStore automated storage and retrieval systems at Kardex Remstar
-          and KPI Solutions — integrating with customer WMS platforms
-          including Manhattan WMi, and running on-site production installs and
-          go-lives. Full-stack across Java/Spring Boot, C#/.NET, React, and
-          Angular.
+          Software developer and IT support specialist currently supporting
+          Cincinnati Children's Hospital, with hands-on Power Platform
+          development — including a Power Apps and SharePoint Online solution
+          in active use for hardware refresh operations. Two and a half years
+          of prior software engineering experience building full-stack
+          features with React, Angular, C#/.NET, Java Spring Boot, REST APIs,
+          and SQL Server on Agile teams. Alongside that, ships and maintains
+          independent mobile and web products — iOS, Android and watchOS apps
+          released through the App Store, TestFlight and Expo EAS — built with
+          React Native, Capacitor and SwiftUI. Comfortable working with both
+          technical teams and non-technical end users, translating day-to-day
+          pain points into working applications.
         </Description>
 
         <ButtonGroup

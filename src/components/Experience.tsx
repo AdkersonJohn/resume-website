@@ -71,12 +71,6 @@ const MetaItem = styled.div`
   color: var(--text-secondary);
 `;
 
-const JobDescription = styled.p`
-  color: var(--text-secondary);
-  line-height: 1.7;
-  margin-bottom: 1rem;
-`;
-
 const Responsibilities = styled.ul`
   list-style: none;
   padding: 0;
@@ -102,14 +96,12 @@ const Experience: React.FC = () => {
   const experiences = [
     {
       title: "IT Engineer",
-      company: "Encore Technologies",
+      company: "Encore Technologies — supporting Cincinnati Children's Hospital",
       location: "Cincinnati, OH",
       period: "Sep 2025 - Present",
-      description:
-        "Provide IT support for Cincinnati Children's Hospital while developing applications for the IT department.",
       responsibilities: [
-        "Develop internal applications for the IT department, including a Power Apps barcode-scanning tool that cross-references SharePoint to streamline hardware refresh cycles",
-        "Provide day-to-day IT support for Cincinnati Children's Hospital staff and systems",
+        "Develop internal applications for the IT department, including a Power Apps barcode-scanning tool that cross-references SharePoint Online to streamline hardware refresh cycles",
+        "Provide day-to-day IT support for Cincinnati Children's Hospital staff and systems, working directly with non-technical users to troubleshoot and resolve issues",
       ],
     },
     {
@@ -117,13 +109,11 @@ const Experience: React.FC = () => {
       company: "Kardex Remstar",
       location: "Cincinnati, OH",
       period: "Jul 2023 - Jul 2024",
-      description:
-        "Developed, integrated, and deployed software for AutoStore automated storage and retrieval systems, from feature work through on-site customer installs.",
       responsibilities: [
-        "Integrated AutoStore software with customer WMS platforms, including Manhattan WMi, building and validating the interfaces that drive inventory and order flow",
+        "Developed and tested features for AutoStore automated storage and retrieval systems on an Agile team",
         "Built features across a React frontend and C#/.NET backend with SQL Server persistence",
         "Validated changes daily against an in-house miniature AutoStore hardware simulation grid",
-        "Ran weekend production deployments and go-lives at customer sites during AutoStore installations, monitoring live logs to ensure smooth rollouts",
+        "Ran weekend production deployments at customer sites, monitoring logs to ensure smooth rollouts",
       ],
     },
     {
@@ -131,13 +121,11 @@ const Experience: React.FC = () => {
       company: "KPI Solutions",
       location: "Cincinnati, OH",
       period: "Jan 2022 - Jun 2023",
-      description:
-        "Built and integrated software for AutoStore warehouse automation systems, supporting customer installs and go-lives on an Agile team.",
       responsibilities: [
-        "Integrated AutoStore software with customer WMS/WMI systems, developing and testing the interfaces handling inventory and order flow",
+        "Built features for AutoStore warehouse automation systems on an Agile team",
         "Developed features across an Angular frontend and Java Spring Boot backend with SQL Server persistence",
         "Tested throughout the day against an in-house AutoStore hardware simulation grid",
-        "Handled weekend on-site production deployments and go-lives during AutoStore installations, with live log monitoring at customer facilities",
+        "Handled weekend on-site production deployments with live log monitoring at customer facilities",
       ],
     },
     {
@@ -145,12 +133,9 @@ const Experience: React.FC = () => {
       company: "University of Cincinnati — Lindner College of Business",
       location: "Cincinnati, OH",
       period: "Apr 2021 - Dec 2021",
-      description:
-        "Provided IT support for faculty, staff, and classroom technology in the Lindner College of Business IT department.",
       responsibilities: [
         "Developed a web-based display for the IT department to monitor classroom camera streams",
-        "Troubleshot audio/video and network issues in classrooms",
-        "Handled level-one service tickets via the ServiceNow ticketing system",
+        "Troubleshot audio/video and network issues in classrooms; handled level-one service tickets via ServiceNow",
       ],
     },
   ];
@@ -193,8 +178,6 @@ const Experience: React.FC = () => {
                   Full-time
                 </MetaItem>
               </JobMeta>
-
-              <JobDescription>{experience.description}</JobDescription>
 
               <Responsibilities>
                 {experience.responsibilities.map((responsibility, idx) => (

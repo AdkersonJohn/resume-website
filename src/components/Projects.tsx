@@ -145,6 +145,20 @@ interface Project {
 const Projects: React.FC = () => {
   const projects: Project[] = [
     {
+      title: "Asset Tag Scanner",
+      technology: "Enterprise IT",
+      icon: <FiCamera />,
+      description:
+        "Power Apps barcode-scanning app used during hardware refresh cycles — scans device asset tags and cross-references SharePoint to instantly flag which machines need cut sheets, including nonstandard-device and missing-inventory detection.",
+      techStack: [
+        "Power Apps",
+        "SharePoint Online",
+        "Power Fx",
+        "Microsoft 365",
+      ],
+      hosting: "Microsoft Power Platform (M365 cloud) · SharePoint backend",
+    },
+    {
       title: "Camp Scout",
       technology: "Full-Stack SaaS",
       icon: <FiMapPin />,
@@ -154,6 +168,7 @@ const Projects: React.FC = () => {
         "React",
         "Node.js",
         "Firebase",
+        "Capacitor",
         "Playwright",
         "Stripe",
         "AWS",
@@ -198,6 +213,16 @@ const Projects: React.FC = () => {
         "Offline-first, no backend · on-device SQLite · App Store via Expo EAS",
     },
     {
+      title: "Pong With Friends",
+      technology: "watchOS Game",
+      icon: <FiWatch />,
+      description:
+        "Native Apple Watch Pong with Digital Crown paddle control and real-time watch-to-watch multiplayer — host-authoritative netcode over Apple's Network framework, 60fps SwiftUI Canvas rendering, and haptic feedback.",
+      techStack: ["Swift", "SwiftUI", "watchOS", "Network framework"],
+      hosting:
+        "Runs entirely on-watch · local-network multiplayer · TestFlight",
+    },
+    {
       title: "Castle Killer",
       technology: "3D Game",
       icon: <FiTarget />,
@@ -230,25 +255,6 @@ const Projects: React.FC = () => {
       ],
       hosting:
         "AWS via Terraform · S3 + CloudFront · ECS Fargate + ALB · GitHub Actions",
-    },
-    {
-      title: "Asset Tag Scanner",
-      technology: "Enterprise IT",
-      icon: <FiCamera />,
-      description:
-        "Power Apps barcode-scanning app used during hardware refresh cycles — scans device asset tags and cross-references SharePoint to instantly flag which machines need cut sheets, including nonstandard-device and missing-inventory detection.",
-      techStack: ["Power Apps", "SharePoint", "Power Fx", "Microsoft 365"],
-      hosting: "Microsoft Power Platform (M365 cloud) · SharePoint backend",
-    },
-    {
-      title: "Pong With Friends",
-      technology: "watchOS Game",
-      icon: <FiWatch />,
-      description:
-        "Native Apple Watch Pong with Digital Crown paddle control and real-time watch-to-watch multiplayer — host-authoritative netcode over Apple's Network framework, 60fps SwiftUI Canvas rendering, and haptic feedback.",
-      techStack: ["Swift", "SwiftUI", "watchOS", "Network framework"],
-      hosting:
-        "Runs entirely on-watch · local-network multiplayer · TestFlight",
     },
   ];
 

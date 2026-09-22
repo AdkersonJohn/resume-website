@@ -16,13 +16,13 @@ beforeAll(() => {
 test("renders all seven current projects in order", () => {
   render(<Projects />);
   const titles = [
+    "Asset Tag Scanner",
     "Camp Scout",
     "AutoSocials",
     "GainsIQ",
+    "Pong With Friends",
     "Castle Killer",
     "GRA Website",
-    "Asset Tag Scanner",
-    "Pong With Friends",
   ];
   const headings = screen.getAllByRole("heading", { level: 3 });
   expect(headings.map((h) => h.textContent)).toEqual(titles);
@@ -50,13 +50,13 @@ test("live links exist only for Camp Scout and AutoSocials with safe attributes"
 test("renders hosting details for all seven projects", () => {
   render(<Projects />);
   const hosting = [
+    "Microsoft Power Platform (M365 cloud) · SharePoint backend",
     "AWS EC2 · S3 + CloudFront · Firestore · custom domain",
     "Docker Compose on VPS · GitHub Actions zero-downtime CI/CD · S3 media",
     "Offline-first, no backend · on-device SQLite · App Store via Expo EAS",
+    "Runs entirely on-watch · local-network multiplayer · TestFlight",
     "Native desktop/iOS via Tauri · no server, physics runs locally",
     "AWS via Terraform · S3 + CloudFront · ECS Fargate + ALB · GitHub Actions",
-    "Microsoft Power Platform (M365 cloud) · SharePoint backend",
-    "Runs entirely on-watch · local-network multiplayer · TestFlight",
   ];
   hosting.forEach((h) => {
     expect(screen.getByText(h)).toBeInTheDocument();
