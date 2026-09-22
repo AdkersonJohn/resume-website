@@ -42,7 +42,9 @@ test("outdated employers and periods are gone", () => {
 
 test("renders the four companies", () => {
   render(<Experience />);
-  expect(screen.getByText("Encore Technologies")).toBeInTheDocument();
+  expect(screen.getByText(
+      "Encore Technologies — supporting Cincinnati Children's Hospital"
+    )).toBeInTheDocument();
   expect(screen.getByText("Kardex Remstar")).toBeInTheDocument();
   expect(screen.getByText("KPI Solutions")).toBeInTheDocument();
   expect(

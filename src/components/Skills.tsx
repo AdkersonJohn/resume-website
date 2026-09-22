@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { FiCode, FiTool, FiUsers, FiDatabase, FiPackage } from "react-icons/fi";
+import { FiCode, FiTool, FiGrid, FiLayers, FiSmartphone } from "react-icons/fi";
 
 const SkillsSection = styled.section`
   padding: 100px 0;
@@ -129,72 +129,75 @@ const SkillTag = styled.span`
 const Skills: React.FC = () => {
   const skillCategories = [
     {
-      title: "Warehouse Automation",
-      icon: <FiPackage />,
+      title: "Microsoft & Power Platform",
+      icon: <FiGrid />,
       skills: [
-        { name: "AutoStore ASRS", level: 4 },
-        { name: "WMS/WMI Integration", level: 4 },
-        { name: "Production Installs & Go-Lives", level: 4 },
-        { name: "Hardware Simulation Testing", level: 4 },
+        { name: "Power Apps", level: 3 },
+        { name: "Power Fx", level: 3 },
+        { name: "SharePoint Online", level: 3 },
+        { name: "Microsoft 365", level: 4 },
+        { name: "Azure", level: 3 },
+        { name: "ASP.NET", level: 3 },
+        { name: "SQL Server", level: 4 },
       ],
     },
     {
-      title: "Programming Languages",
+      title: "Languages",
       icon: <FiCode />,
       skills: [
-        { name: "Java (17+)", level: 4 },
-        { name: "C#", level: 4 },
-        { name: "Python", level: 3 },
         { name: "JavaScript/TypeScript", level: 4 },
+        { name: "C#", level: 4 },
+        { name: "Java (17+)", level: 4 },
+        { name: "Swift", level: 3 },
+        { name: "Python", level: 3 },
         { name: "C++", level: 3 },
+        { name: "Rust", level: 3 },
       ],
     },
     {
-      title: "Frameworks & Technologies",
-      icon: <FiTool />,
+      title: "Mobile",
+      icon: <FiSmartphone />,
       skills: [
-        { name: "Spring 6.x / Spring Boot 3.x", level: 4 },
-        { name: "ASP.NET", level: 3 },
-        { name: "Angular/AngularJS", level: 4 },
+        { name: "React Native", level: 4 },
+        { name: "Expo", level: 4 },
+        { name: "Capacitor", level: 3 },
+        { name: "SwiftUI", level: 3 },
+        { name: "watchOS", level: 3 },
+      ],
+    },
+    {
+      title: "Frameworks & APIs",
+      icon: <FiLayers />,
+      skills: [
         { name: "React", level: 5 },
+        { name: "Angular/AngularJS", level: 4 },
+        { name: "Spring 6.x / Spring Boot 3.x", level: 4 },
         { name: "REST APIs", level: 4 },
       ],
     },
     {
-      title: "Development Tools",
-      icon: <FiDatabase />,
+      title: "Tools & Practices",
+      icon: <FiTool />,
       skills: [
         { name: "Git/GitHub/GitLab", level: 4 },
         { name: "Jenkins/JFrog", level: 4 },
-        { name: "VSCode/IntelliJ", level: 4 },
-        { name: "Visual Studio", level: 4 },
-        { name: "Jira/Bitbucket", level: 4 },
-      ],
-    },
-    {
-      title: "Database & DevOps",
-      icon: <FiUsers />,
-      skills: [
-        { name: "T-SQL/RDBMS", level: 4 },
-        { name: "Azure", level: 3 },
+        { name: "Jira", level: 4 },
+        { name: "ServiceNow", level: 3 },
         { name: "Agile/Scrum", level: 4 },
         { name: "Test-Driven Development", level: 4 },
-        { name: "Object-Oriented Design", level: 4 },
       ],
     },
   ];
 
   const additionalSkills = [
-    "Bash/Swift Scripting",
     "HTML/CSS",
+    "Bash",
     "SOAP APIs",
-    "Swagger Documentation",
-    "Freshdesk",
-    "Remote Desktop Manager",
-    "ServiceNow",
-    "Complex Problem Solving",
-    "Web-based Solutions",
-    "Cloud Technologies",
+    "Swagger",
+    "Expo EAS",
+    "TestFlight",
+    "App Store Releases",
+    "Android Releases",
   ];
 
   return (
