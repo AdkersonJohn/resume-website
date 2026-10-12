@@ -108,7 +108,7 @@ const Education: React.FC = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <Degree>Bachelor's Degree in Computer Software Engineering</Degree>
+          <Degree>Associate's Degree in Computer Software Engineering</Degree>
           <University>University of Cincinnati</University>
 
           <EducationMeta>
